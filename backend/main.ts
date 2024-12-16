@@ -7,6 +7,7 @@ import ElectronStore from 'electron-store'
 import { fileURLToPath } from 'url'
 import { dirname } from 'path'
 
+
 const __filename = fileURLToPath(import.meta.url)
 const __dirname = dirname(__filename)
 const { autoUpdater } = electronUpdater
