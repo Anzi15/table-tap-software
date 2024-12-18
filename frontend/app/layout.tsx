@@ -1,12 +1,9 @@
 "use client"
 import './globals.css'
 import Sidebar from './components/Sidebar'
+import Navbar from './components/Navbar'
 import { useEffect, useState } from 'react'
-// export const metadata = {
-// 	title: 'NextJS + Electron Boilerplate',
-// 	description:
-// 		'A neat boilerplate for building Electron apps, with NextJS at the frontend and pre-configured with a bunch of handy development tools.',
-// }
+
 
 export default function RootLayout({
 	children,
@@ -55,6 +52,7 @@ export default function RootLayout({
 
       {/* Main Content */}
       <div className="p-4 sm:ml-64">
+      <Navbar />
         <div className="p-4 border-2 border-gray-200 border-dashed rounded-lg dark:border-gray-700">
 				{children}
         </div>
